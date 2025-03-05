@@ -1,9 +1,68 @@
-.firstCont {
-    background: whitesmoke;
-    border-radius: 10px;
-    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.4);
+body {
+    background-color: azure;
+    margin: 20px;
 }
 
-img {
+.container {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background: whitesmoke;
+    width: fit-content;
     border-radius: 10px;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.4);
+    display: flex;
+}
+
+#mainText {
+    text-align: center;
+}
+
+.container img {
+    position: absolute;
+    margin: 70px;
+    right: 0;
+    bottom: 0;
+    width: 340px;
+    height: 340px;
+    border-radius: 5px;
+    box-shadow: 0 9px 5px rgba(0, 0, 0, 0.3);
+    transition: all .3s ease-in-out;
+}
+.container img:hover {
+    transform: translateY(-15px);
+}
+
+.info {
+    padding: 30px;
+}
+
+.lakások {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.lakások th,
+.lakások td {
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 10px;
+}
+
+.lakások th {
+    background-color: rgb(80, 158, 65);
+}
+
+.lakások tr {
+    transition: all .3s ease-in-out;
+}
+
+.lakások tr:hover {
+    background-color: #d4e6f1;
+}
+
+.osszefoglalas {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
 }
