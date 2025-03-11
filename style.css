@@ -66,3 +66,12 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+#secondCont {
+    margin-top: 5%;
+    padding: 50px;
+}
+
+* {
+    text-decoration: none;
+}
