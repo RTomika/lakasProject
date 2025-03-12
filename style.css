@@ -1,13 +1,23 @@
 body {
-    background-color: azure;
+    background-color: rgb(15, 15, 15);
     margin: 20px;
+}
+
+::selection {
+    color: black;
+    background-color: rgb(202, 89, 212);
+}
+
+* {
+    color: white !important;
+    text-decoration: none;
 }
 
 .container {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    background: whitesmoke;
+    background: rgb(25, 25, 25);
     width: fit-content;
     border-radius: 10px;
     box-shadow: 0 5px 6px rgba(0, 0, 0, 0.4);
@@ -18,7 +28,7 @@ body {
     text-align: center;
 }
 
-.container img {
+.container #mainImg {
     position: absolute;
     margin: 70px;
     right: 0;
@@ -29,7 +39,7 @@ body {
     box-shadow: 0 9px 5px rgba(0, 0, 0, 0.3);
     transition: all .3s ease-in-out;
 }
-.container img:hover {
+.container #mainImg:hover {
     transform: translateY(-15px);
 }
 
@@ -50,7 +60,7 @@ body {
 }
 
 .lakások th {
-    background-color: rgb(80, 158, 65);
+    background-color: rgb(40, 119, 40);
 }
 
 .lakások tr {
@@ -59,6 +69,39 @@ body {
 
 .lakások tr:hover {
     background-color: #d4e6f1;
+}
+
+.urlap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#submitBtn {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 4px;
+    width: fit-content;
+    font-size: 1.5rem;
+    padding: 5px 25px;
+}
+
+input, textarea {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 6px;
+    font-size: 1.75rem;
+    font-family: "Roboto";
+    padding: 10px;
+    transition: all .4s ease-in-out;
+}
+input:focus, textarea:focus {
+    border: none;
+}
+
+textarea {
+    height: 200px;
 }
 
 .osszefoglalas {
@@ -72,6 +115,35 @@ body {
     padding: 50px;
 }
 
-* {
-    text-decoration: none;
+.kepek {
+    display: flex;
+    padding: 50px;
+    gap: 50px;
+}
+
+.images {
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    transition: all .3s ease-in-out;
+}
+
+.images:hover {
+    transform: scale(2);
+    z-index: 11;
+}
+
+.backBtn {
+    cursor: pointer;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    padding: 5px 20px;
+    transition: all .3s ease-in-out;
+}
+
+.backBtn:hover {
+    background-color: rgb(0, 151, 0);
 }
