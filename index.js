@@ -1,10 +1,14 @@
 const showName = document.getElementById("username");
 const nameInput = document.getElementById("nameInput");
+
+
+const submitIcon = document.getElementById("submitIcon");
 const submitBtn = document.getElementById("submitBtn");
 
-console.log(nameInput);
-
-submitBtn.addEventListener("click", () => {
-    let username = nameInput.value;
-    showName.innerHTML = username;
+submitBtn.addEventListener("mouseover", () => {
+    submitIcon.classList.add("active");
 })
+
+submitBtn.addEventListener("mouseleave", () => {
+    submitIcon.classList.remove("active");
+}) 
